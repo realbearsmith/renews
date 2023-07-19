@@ -32,9 +32,7 @@ jobs:
       run: echo ${{ secrets.NEWSAPI_KEY }}
 
     - name: Run script
-      run: python fetch_news.py
-      env:
-        NEWSAPI_KEY: ${{ secrets.NEWSAPI_KEY }}
+      run: NEWSAPI_KEY=${{ secrets.NEWSAPI_KEY }} python fetch_news.py
 
     - name: Commit and push changes
       run: |
