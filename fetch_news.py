@@ -4,7 +4,7 @@ import os
 from newsapi.newsapi_client import NewsApiClient
 
 # Get the NewsAPI key from the environment variables
-api_key = os.getenv("NEWSAPI_KEY")
+api_key = "{}".format(os.getenv("NEWSAPI_KEY"))
 
 # Initialize the NewsAPI client
 newsapi = NewsApiClient(api_key=api_key)
