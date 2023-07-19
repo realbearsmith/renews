@@ -1,7 +1,6 @@
 # %%
 import csv
 import os
-from dotenv import load_dotenv
 from newsapi.newsapi_client import NewsApiClient
 
 # Get the NewsAPI key from the environment variables
