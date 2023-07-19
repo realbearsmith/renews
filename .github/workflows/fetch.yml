@@ -4,6 +4,8 @@ on:
   schedule:
     # Run this workflow every day at 11 PM UTC
     - cron:  '0 23 * * *'
+  # Allow manual triggers
+  workflow_dispatch:
 
 jobs:
   fetch-news:
