@@ -5,7 +5,6 @@ from dotenv import load_dotenv
 from newsapi.newsapi_client import NewsApiClient
 
 # Get the NewsAPI key from the environment variables
-load_dotenv()
 api_key = os.getenv("NEWSAPI_KEY")
 
 # Initialize the NewsAPI client
